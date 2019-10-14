@@ -54,7 +54,7 @@ python3 mainVideoUnshaded.py \
 ```
 
 ## Datasets and binary releases
-Volume datasets, prerendered data for the training and pretrained networks can be found here: TODO
+Volume datasets, prerendered data for the training and pretrained networks can be found under `Releases`
 
 ## License
 This software, excluding third party libraries, is distributed under the MIT open source license. See `LICENSE` for details.
