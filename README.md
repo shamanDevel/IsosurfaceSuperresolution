@@ -7,6 +7,8 @@ The code was written under Windows 10 with Visual Studio and CUDA 10.0 and Pytho
 For the python requirements, see `SuperresolutioNetwork\Requirements.txt`.
 The network will run (probably) platform-independently but the isosurface renderer is most likely fixed to Windows. Use it on other platforms on your own risk.
 
+Note: for the sake of a smaller repository, we only added the third-party libraries for a release build and excluded the debug build.
+
 ## Project structure
 The project contains the following sub-project
  - CopyLibraries: utility that copies dlls from the third-party folders to the binary folder
