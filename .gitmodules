@@ -1,0 +1,6 @@
+[submodule "third-party/glm"]
+	path = third-party/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "third-party/cuMat"]
+	path = third-party/cuMat
+	url = https://gitlab.com/shaman42/cuMat.git

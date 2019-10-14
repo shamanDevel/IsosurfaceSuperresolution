@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerWorkingDirectory>O:\Share\SebastianWeiss\IsoSuperres-Data</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-m iso --res 512,512 --animation 10 --origin 0.561,-0.480,-0.245,0.480,-0.355,-0.475 --lookat 0.035,-0.092,-0.087,-0.043,0.022,-0.158 --up 0.000,0.000,-1.000 --isovalue 0.4129894147029559 --noshading 1 --diffuse 0.983,0.953,0.357 --specular 0.040,0.040,0.040 --exponent 4 --light -0.689,-0.443,-0.574 --samples 8 --downscale_path C:\Users\ga38cat\AppData\Local\Temp\low_tmp_&amp;05d.exr --downscale_factor 4 --depth C:\Users\ga38cat\AppData\Local\Temp\low_tmp_&amp;05d_depth.exr --flow C:\Users\ga38cat\AppData\Local\Temp\low_tmp_&amp;05d_flow.exr --highdepth C:\Users\ga38cat\AppData\Local\Temp\high_tmp_&amp;05d_depth.exr --ao world --aosamples 256 --aoradius 1.0 --higheffects C:\Users\ga38cat\AppData\Local\Temp\high_tmp_&amp;05d_fx.exr data/snapshot_080_256.vbx C:\Users\ga38cat\AppData\Local\Temp\high_tmp_&amp;05d.exr</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerWorkingDirectory>O:\Share\SebastianWeiss\IsoSuperres-Data</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-m iso --res 512,512 --animation 10 --origin 0.561,-0.480,-0.245,0.480,-0.355,-0.475 --lookat 0.035,-0.092,-0.087,-0.043,0.022,-0.158 --up 0.000,0.000,-1.000 --isovalue 0.4129894147029559 --noshading 1 --diffuse 0.983,0.953,0.357 --specular 0.040,0.040,0.040 --exponent 4 --light -0.689,-0.443,-0.574 --samples 8 --downscale_path C:\Users\ga38cat\AppData\Local\Temp\low_tmp_&amp;05d.exr --downscale_factor 4 --depth C:\Users\ga38cat\AppData\Local\Temp\low_tmp_&amp;05d_depth.exr --flow C:\Users\ga38cat\AppData\Local\Temp\low_tmp_&amp;05d_flow.exr --highdepth C:\Users\ga38cat\AppData\Local\Temp\high_tmp_&amp;05d_depth.exr --ao world --aosamples 256 --aoradius 1.0 --higheffects C:\Users\ga38cat\AppData\Local\Temp\high_tmp_&amp;05d_fx.exr data/snapshot_080_256.vbx C:\Users\ga38cat\AppData\Local\Temp\high_tmp_&amp;05d.exr</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>
