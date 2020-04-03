@@ -1,15 +1,26 @@
-# Volumetric Isosurface Rendering with Deep Learning-Based Super-Resolution
+# Volumetric Isosurface Rendering with Deep Learning-Based Super-Resolution (TVCG 2019)
+[Sebastian Weiss](https://www.in.tum.de/cg/people/weiss/), [Mengyu Chu](https://ge.in.tum.de/about/mengyu-rachel/), [Nils Thuerey](https://ge.in.tum.de/about/n-thuerey/), [Ruediger Westermann](https://www.in.tum.de/cg/people/westermann/), 
+Technical University of Munich
 
-This repository contains the code accompaning the TVCG submission.
+![Teaser Image](https://www.in.tum.de/fileadmin/_processed_/f/1/csm_IsoSuperresTeaser_fd84eacf47.jpg)
 
-## Requirements
+### License ###
+This software, excluding third party libraries, is distributed under the MIT open source license. See `LICENSE` for details.
+
+### Resources ###
+* [Project page](https://www.in.tum.de/cg/research/publications/2019/volumetric-isosurface-rendering-with-deep-learning-based-super-resolution/)
+* [TVCG 2019 Paper](https://ieeexplore.ieee.org/document/8918030)
+* [Preprint (PDF)](https://www.in.tum.de/fileadmin/w00bws/cg/Research/Publications/2019/IsoSuperres/IsosurfaceSuperResolution-TVCGfinal-Preprint.pdf)
+
+
+### Requirements ###
 The code was written under Windows 10 with Visual Studio and CUDA 10.0 and Python 3.6.
 For the python requirements, see `SuperresolutioNetwork\Requirements.txt`.
 The network will run (probably) platform-independently but the isosurface renderer is most likely fixed to Windows. Use it on other platforms on your own risk.
 
 Note: for the sake of a smaller repository, we only added the third-party libraries for a release build and excluded the debug build.
 
-## Project structure
+### Project structure ###
 The project contains the following sub-project
  - CopyLibraries: utility that copies dlls from the third-party folders to the binary folder
  - CPURenderer: cpu isosurface renderer, callable from command line or interactive over streans
@@ -25,7 +36,7 @@ The project contains the following sub-project
     - mainComparisonImages.py / mainComparisonVideo1,2,3.py: scripted benchmarks and video creation
     - mainPSNR1,2,3,4.py: scripts used to create the statistics reported in the paper
 
-## How to use it
+### How to use it ###
 The `mainGUI.py` can be directly launched without command line arguments. It opens a window and allows you to select the volume to render and the networks to use.
 
 `mainVideoUnshaded.py` is the main training code. All network and training parameters are specified via command line.
@@ -53,8 +64,25 @@ python3 mainVideoUnshaded.py \
 	--cuda
 ```
 
-## Datasets and binary releases
+### Datasets and binary releases ###
 Volume datasets, prerendered data for the training and pretrained networks can be found under `Releases`
 
-## License
-This software, excluding third party libraries, is distributed under the MIT open source license. See `LICENSE` for details.
+## Citation ##
+If you find this source code or the paper useful in your research, please cite our work as follows:
+```
+@ARTICLE{weiss2019isosuperres,
+author={S. {Weiss} and M. {Chu} and N. {Thuerey} and R. {Westermann}},
+journal={IEEE Transactions on Visualization and Computer Graphics},
+title={Volumetric Isosurface Rendering with Deep Learning-Based Super-Resolution},
+year={2019},
+volume={},
+number={},
+pages={1-1},
+keywords={Isosurfaces;Image reconstruction;Spatial resolution;Signal resolution;Rendering (computer graphics);Training;Machine Learning;Extraction of Surfaces (Isosurfaces, Material Boundaries);Volume Rendering},
+doi={10.1109/TVCG.2019.2956697},
+ISSN={2160-9306},
+month={},}
+```
+
+## Supplemental Material ##
+[![Supplemental Video](https://img.youtube.com/vi/TDGxMNhPduo/0.jpg)](https://www.youtube.com/watch?v=TDGxMNhPduo)
